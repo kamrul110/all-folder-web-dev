@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed selectors</title>
+    <style>
+        /* universal dile * diye suru krte hoy 
+        *{
+            margin: 0;
+        }
+
+         */
+        
+
+        /* p{
+            color: red;
+        } */
+        #fifth, li{
+            font-size: 40px;
+        }
+        .holud, .yellow{
+            background-color: yellow;
+        }
+        .bold{
+            /* ekhane yellow bold howar kotha chilo but sudhu bold lekhleo kaj hbe  */
+            font-weight: 900;
+        }
+
+        /* attribute key*/
+        input[type="text"]{
+            color: blue;
+        }
+       input[type="password"]{
+        /*font-size: 30px; */
+        color: red;
+       }
+       .css{
+        color: aqua;
+       }
+
+
+       .blog{
+        background-color: aqua;
+       }
+    
+
+    </style>
+</head>
+<body>
+    <h3>Explore mix selectors</h3>
+    <p>My first <span class="css">line css</span></p>
+    <p class="yellow">My second line css</p>
+    <p>My third line css</p>
+    <p class="yellow bold">My fourth line css</p>
+    <p class="holud" id="fifth">My fifth line css</p>
+    <p class="bold">My six line css</p>
+    <p>My seventh line css</p>
+    <ol>
+        <li>Element selectors</li>
+        <li>Id selector</li>
+        <li class="bold holud">class selector</li>
+        <li>universal</li>
+    </ol>
+     
+    <div class="blog">
+        <h3>my blog</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui perspiciatis non corporis est adipisci facilis exercitationem placeat distinctio dolor doloremque illo reiciendis optio eligendi magni, cumque perferendis soluta! Enim!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt quae unde dolores voluptatem commodi nam architecto quis atque ea, vel fugiat numquam sequi iusto veritatis maiores iste distinctio nostrum.</p>
+    </div>
+
+    <form action="">
+        <input type="text"><br>
+        <input type="password" name="" id="">
+    </form>
+   
+</body>
+</html>

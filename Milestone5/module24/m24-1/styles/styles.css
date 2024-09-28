@@ -1,0 +1,23 @@
+
+/* m24-6 er jnno */
+h1{
+    color: lightcoral;
+}
+
+
+/* vvip connect stylelnjs and html */
+.yellow-bg{
+    background-color: yellowgreen !important;
+    text-align: center;
+    /* clash kortechilo section er etar jnno section.style.backgroundColor='lightgray' 
+    then jodi important dei tahole important er priority besi pabe */
+}
+/* or */
+/* .text-center{
+    text-align: center;
+} */
+
+
+.large-text{
+    font-size: 2em;
+}

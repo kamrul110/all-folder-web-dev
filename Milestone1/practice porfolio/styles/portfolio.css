@@ -1,0 +1,153 @@
+
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+/* 1st part */
+nav{
+    display: flex   ;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ .nav-title{
+font-weight: 800;
+font-size: 45px;
+ }
+
+ .text-primary{
+color: blueviolet;
+ }
+
+ /* HI im er color */
+ .dark-2{
+color: gray;
+ }
+
+ .btn-primary{
+    background-color: blueviolet;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 5px;
+     }
+/* 1st nav bar tuku ai tuk */
+
+
+/*  */
+.header{
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left,bottom right;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+    /* eta dorkari */
+    max-width: 500px;
+}
+.banner-greetings{
+    font-size: 45px;
+    font-weight: 600;
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.banner-profile-pic{
+   /* width: 580px; */
+
+   /* amr chobi dile margin dite hbe */
+   width: 580px;
+   margin: 55px;
+   margin-right: 20px;
+   
+   
+}
+.secondary-bg{
+    background-color: #e5e5f8;
+    
+}
+.header{
+    height: 800px;
+}
+
+
+/* main */
+main{
+    max-width: 1140px;
+    /* margin: 0 auto; */
+    margin: 0 auto;
+}
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.about{
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    
+}
+
+/* item  */
+.about-items{
+    display: flex;
+    justify-content: space-around;
+}
+.item-description{
+    font-weight: 600;
+}
+/* niche o ache
+.section-description{
+    font-size: 18px;
+    color: rgb(111, 111, 111);
+} */
+
+/* main close */
+
+
+/*  */
+.section-description{
+    font-size: 18px;
+    color: rgb(111, 111, 111);
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+/* skill */
+.skills-container{
+    display: flex;
+    gap:24px
+}
+.skill{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(3, 3, 3, 0.057);
+}

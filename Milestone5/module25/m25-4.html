@@ -1,0 +1,54 @@
+<!-- event-summery-html -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Final DOm event handlers</h1>
+
+
+
+
+    <h3 id="handler-status">Default Text</h3>
+    <p id="input-text-display">Default Input text </p>
+    <input id="input-field" type="text">
+<button id="btn-update">Update</button>
+<br>
+<br>
+
+
+
+
+    <button onclick="handleOnClick()"> handle event by Add onclick function</button>
+    <button id="event-listener">handle event by addEvenListener</button>
+    <script>
+        //option 1
+        //event add korar system
+        function handleOnClick(){
+            // console.log('button clicked');
+            let handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText='Handled bu function attaced on onclick atrribute'
+        }
+        //option 2
+        document.getElementById('event-listener').addEventListener('click',function(){
+            let handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'Text updated by add event listener button'
+        })
+
+        //option 2 recap
+        document.getElementById('btn-update').addEventListener('click',function(){
+            
+let inputField = document.getElementById('input-field');
+
+let inputText = inputField.value;
+let p = document.getElementById('input-text-display')
+
+p.innerText = inputText;
+inputField.value = '';
+        })
+    </script>
+ </body>
+ </html>

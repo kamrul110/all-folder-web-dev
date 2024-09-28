@@ -1,0 +1,247 @@
+<!-- alt+shift+f dile sajano hoye jay auto line gula code er
+ link, -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* border collaps dile sob gula ak sthe box akare hbe na dile alada alada box hbe */
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/nav(5).css">
+
+
+
+
+
+
+
+
+
+    <!-- eikh -->
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+
+<body>
+
+
+
+
+    <header>
+        <nav>
+            <ul>
+                <!-- shortcut li*4>a dile e hoe jay -->
+                <li><a href="m4-1.html">Video</a></li>
+
+
+
+                <li><a href="m4-3.html">Form</a>
+
+                  </li>
+
+
+
+
+                <li><a href="m4-4,5.html">Table</a>
+                
+                
+                </li>
+
+
+
+
+
+
+
+                <li><a href="m4-2.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <h1>HTML Table</h1>
+        <table>
+            <caption>Employee Salary Data</caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Microsoft</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuku</td>
+                    <td>Facebook</td>
+                    <td>$1300</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Employee: 4</td>
+                    <!-- colspan="2" dile 2 column borabor jabe box ta -->
+                </tr>
+            </tfoot>
+        </table>
+        <ul>
+            <li>Table: table</li>
+            <li>table head: thead</li>
+            <li>Table body: tbody</li>
+            <li>Table footer: tfoot</li>
+            <li>table row: tr</li>
+            <li>table data or table cell: td</li>
+            <li>table header cell: th</li>
+            <li>caption</li>
+        </ul>
+
+
+
+
+<button title="please click me">Click me</button>
+<button disabled>click me </button>
+<input type="number" max="10" min="5" name="" id="">
+
+
+<!-- shortcut -->
+<!-- ul>li*5>a -->
+<ul>
+    <li><a href="a.html">anchor</a></li>
+    <li><a href="bloc"></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+<!-- ul.dropdown -->
+<ul class="dropdown"></ul>
+<!-- ul.dropdown#user -->
+<ul class="dropdown" id="user">iiii</ul>
+
+<!-- ul.dropdown#user>li.item*5 -->
+<ul class="dropdown" id="user">
+    <li class="item">iiiii</li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+</ul>
+<!-- ul.dropdown#user>li.item*5>a.menuItem -->
+<ul class="dropdown" id="user">
+    <li class="item"><a href="" class="menuItem"></a></li>
+    <li class="item"><a href="" class="menuItem"></a></li>
+    <li class="item"><a href="" class="menuItem"></a></li>
+    <li class="item"><a href="" class="menuItem"></a></li>
+    <li class="item"><a href="" class="menuItem"></a></li>
+</ul>
+
+<!-- main>article.blog.blog*3>h3 -->
+<main>
+    <article class="blog blog">
+        <h3></h3>
+    </article>
+    <article class="blog blog">
+        <h3></h3>
+    </article>
+    <article class="blog blog">
+        <h3></h3>
+    </article>
+</main>
+<!-- main>article.blog*3>h3{My Blog} -->
+
+<main>
+    <article class="blog">
+        <h3>My Blog</h3>
+    </article>
+    <article class="blog">
+        <h3>My Blog</h3>
+    </article>
+    <article class="blog">
+        <h3>My Blog</h3>
+    </article>
+</main>
+
+
+<!-- $ dile my blog 1,2,3...evabe count kore dey -->
+<!-- main>article.blog*3>h3{My Blog $}+p>lorem10 -->
+<main>
+    <article class="blog">
+        <h3>My Blog 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, nisi?</p>
+    </article>
+    <article class="blog">
+        <h3>My Blog 2</h3>
+        <p>Laborum expedita ipsum mollitia veniam magni commodi nam alias! A.</p>
+    </article>
+    <article class="blog">
+        <h3>My Blog 3</h3>
+        <p>Sed similique qui ratione cum aperiam blanditiis eius! Nisi, aut?</p>
+    </article>
+</main>
+
+<!-- main>article.blog*3>h3{My Blog $}+p>lorem10^p>lorem50 -->
+<main>
+    <article class="blog">
+        <h3>My Blog 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, impedit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque non esse officiis. Facere rerum necessitatibus blanditiis. Similique, quae nulla! Accusamus beatae voluptate velit totam, optio mollitia! Cupiditate, inventore sapiente explicabo architecto ab molestiae voluptate consectetur alias ipsa ducimus rem, nemo nam, possimus officia sit esse fugit porro at illum?</p>
+    </article>
+    <article class="blog">
+        <h3>My Blog 2</h3>
+        <p>Eaque facilis enim unde dignissimos ipsum soluta, tempore saepe commodi!</p>
+        <p>Officiis voluptatum consequatur ratione accusantium, numquam eveniet illum architecto neque quam ullam possimus exercitationem odio vel aspernatur doloremque tempore, dignissimos nulla ad laboriosam molestiae asperiores impedit. Officiis vitae quos praesentium suscipit sapiente. Pariatur deserunt maxime quos sint, dignissimos vero odio atque, tenetur, dolore animi adipisci mollitia voluptatibus minus iste voluptas?</p>
+    </article>
+    <article class="blog">
+        <h3>My Blog 3</h3>
+        <p>Unde nostrum dolorem, minus sunt numquam ipsa dolorum earum sequi?</p>
+        <p>Vero id omnis architecto at ex amet iure laboriosam ab, cum eius est officia itaque minima ipsam ducimus nostrum sunt facere, dicta inventore delectus debitis corrupti magnam. Ea ipsum tempora alias ipsam distinctio amet incidunt quidem molestiae. Aut labore aspernatur dolor ut quae eius libero? Tempora quaerat nulla excepturi perspiciatis.</p>
+    </article>
+</main>
+
+ 
+
+</body>
+
+</html>

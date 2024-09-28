@@ -1,0 +1,249 @@
+<!-- document.getElementsByTagName('li') -->
+ <!-- document.getElementById('fruits-title') -->
+  <!-- document.querySelectorAll('#fruits-title') -->
+
+
+   <!--m24-4 er jnno
+   ei 2ta important 1st er ta dile sudhu list prothom ta show korbe ar 2nd ta dile sob gula list show korbe.
+  document.querySelector('.fruits-container li')
+    document.querySelectorAll('.fruits-container li') 
+    static
+
+    document.getElementsByClassName('important-places')
+    live
+    HTMLCollection(3) [li.important-places, li.important-places, li.important-places]
+
+    search google htmlcollection vs nodelist
+    getelementByTagname('h1')
+    -->
+
+
+
+  <!-- document.getElementById("places-title").innerText
+   inner text dile aro vitore jay
+   document.getElementById("places-title").innerText='my Tour list'
+   eta diye vitore text o change krte parbo -->
+   <!-- ctrl+alt +down arrow dile ak sthe niche jay -->
+
+
+
+<!--m24-5 er jnno................
+   document.getElementById('fruits-title').style
+ eta dile sob dhoroner styles asbe css er 
+ then color red dile etar color red hoe jabe.
+ jemon
+ document.getElementById('fruits-title').style.color='red'
+ 
+ vvip**
+ javascript er html er mto background-color: ;
+ evabe deya jabe na backgroundColor: ; eivabe dite hbe.camel case
+ 
+//egula inspect e cheak krar jnno
+
+ let title = document.getElementById('fruits-title')
+ enter
+ title.getAttribute('id')
+ ans:fruits-title
+
+
+ abr
+ let title = document.getElementById('fruits-title')
+ enter
+ title.getAttribute('class')
+ ans:some-class random-class blue-bg
+ joto gula class ache class gula diye dibe
+ enter
+ title.getAttribute.remove('blue-bg')
+  title.getAttribute.add('purple-bg')
+  //remove or add o krte parbo cls
+
+
+abr
+let title = document.getElementById('fruits-title')
+enter
+title.setAttribute('title','tooltip set by javascript')
+
+
+abr
+document.getElementsByClassName('fruits-container')
+enter
+document.getElementsByClassName('fruits-container')[0]
+enter
+
+
+document.getElementsByClassName('fruits-container')[0].innerHTML
+enter  // jodi change krte chai
+document.getElementsByClassName('fruits-container')[0].innerHTML='<h2>ABC wow DOM change</h2>'
+
+
+
+abr //jodi text gula dekhte cai
+document.getElementsByClassName('fruits-container')[0].innerText
+//ei tuk m24-5 er jonno
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /*fruits-container er vitor joto li ache tader dichi ei color  */
+        .fruits-container li{color: tomato;}
+
+        #fruits-title{
+            color: black;
+        }
+        
+        .important-places{
+            color: blueviolet;
+            /* background-color: ; */
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quisquam eos rerum, ipsa ducimus aliquam vero sapiente ea commodi voluptatibus animi dolor voluptatum magni! Fugit minima ullam at officia ipsam.</p>
+    </header>
+    <main id="main-container">
+       <section>
+        <h1>My Awsome DOM de baba</h1>
+        
+        <ul>
+            <li>jalali set</li>
+            <li>shafayet</li>
+            <li>bonobash</li>
+            <li>Dom de de baba</li>
+        </ul>
+       </section>
+
+       <section class="fruits-container">
+        <h1 id="fruits-title" class="some-class random-class blue-bg">fruits I like</h1>
+        <!--ei class gula class="some-class random-class blue-bg"
+        declare kora hoy ni emni m24-5 er jnno -->
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>carrot</li>
+        </ul>
+       </section>
+       <section id="places-container" class="large-text">
+        <h1 id="places-title">place i like to visit</h1>
+        <ul id="places-list">
+            <li class="important-places">sundor ban</li>
+            <li class="important-places">bandor ban</li>
+            <li class="important-places">tendor ban</li>
+            <li class="other-place">ondor ban</li>
+        </ul>
+       </section>
+    </main>
+  
+     <!-- script:src +tab -->
+     <script src="js/dom.js"></script>
+
+ <!-- m24-8 er jnno ei link
+       -->
+       <script src="js/append.js"></script>
+
+     <!--m24-6 er jnno ei link -->
+     <script src="js/stylelnjs.js"></script>
+
+    <!--vvip ekta bisoy ache.connect stylelnjs and html** 
+      <script src="js/append.js"></script>
+eta style er upre dite hbe tahole style sob gula ke nibe -->
+
+
+
+<!-- eikhan theke m24-2 and m24-3 -->
+     <!-- or eivabe o kora jay -->
+      <!-- <script>
+        let student={
+            name:'abul',
+            ID:11,
+            study:function(time){
+                console.log(time,'stydy koreteche');
+            }
+        }
+        console.log('adding js ');
+      </script> -->
+
+      <script>
+        //option-1:getElementsByTagName eta dile sob peye jai.eta besi use krbo na
+        let liCollection = document.getElementsByTagName('li')
+        // console.log(liCollection);
+        for(let li of liCollection){
+
+            //.// console.log(li.innerText);
+        }
+        let allHeadings = document.getElementsByTagName('h1');
+        for(let h1 of allHeadings){
+    //.// console.log(h1.innerText);
+
+}
+
+
+//jodi change krte chai text
+//option-2:.getElementById jei particuler id chai sei id dibe
+let fruitsTitle = document.getElementById('fruits-title');
+fruitsTitle.innerText = 'fruits changed by js';
+
+//option-3:getElementsByClassName oi class er jara ache sob gula ke peye jabo
+let places = document.getElementsByClassName('important-places');
+for(let place of places){
+    //..//console.log(place);
+    //..//console.log(place.innerText);
+}
+//ei tuk m24-3
+
+
+
+
+
+
+
+
+
+//m24-4 er jnno
+//jodi css er selector diye khujte chai tahole ei gula(      document.querySelectorAll(cls or id name mention krbo)    )diye use krbo.
+//option-4:querySelector sudhu 1st er ta dibe
+//option-5:querySelectorAll eta dile node gula jogar kre dibe
+let someLi = document.querySelectorAll('.fruits-container li');
+// console.log(someLi); inspect e cheak kora jnno
+for(let li of someLi){
+    //joto gula li ache segula theke li gula console log kre peyechi
+    //..//console.log(li);
+    //..//console.log(li.innerText);
+    // ekhane sudhu li use krle 3ta li show krbe ar.innerText use korle aro vitore giye name gula show korabe
+}
+//inspect e cheak krbo
+// document.querySelector.('.fruits-container li') eta dile 1st er li dibe
+// document.querySelectorall.('.fruits-container li') eta dile sob li dibe
+//m24-4 ei tuk
+
+
+
+
+
+
+//m24-5 er jnno.........................
+//inspect e cheak krar jnnodocument.getElementById('fruits-title').style.color='blue'
+
+//jodi sudhu text dekhte cai
+// const section = document.querySelector('.fruits-container');
+// const text = section.innerText;
+// console.log(text);
+
+const section = document.querySelector('.fruits-container');
+const text = section.innerHTML;
+//..//console.log(text);
+
+
+        
+      </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner with Background Image</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        /* CSS for the banner */
+        .banner {
+            
+            position: relative; /* Allows positioning of text inside */
+            min-height: 500px; /* Adjust the height of the banner */
+            border: 1px solid white; /* Adds a border around the banner */
+            border-radius: 10px; /* Optional: Adds rounded corners */
+            background-image: url('images/new\ 3.png'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire section */         
+            background-position: center; /* Centers the background image */
+            display: flex; /* Flex to center content */
+            align-items: center; /* Vertically centers content */
+            justify-content: center; /* Horizontally centers content */
+            padding: 20px; /* Adds padding inside the banner */
+            color: white; /* Text color */
+            text-align: center; /* Centers text */
+            overflow: hidden; /* Ensures content stays within boundaries */
+        }
+
+        /* Optional: Dark overlay to enhance text readability */
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the opacity for the desired effect */
+            z-index: 1;
+        }
+       
+
+        /* Text content styling */
+        .banner-content {
+            position: relative; /* Positions text above the overlay */
+            z-index: 2;
+        }
+
+        .banner h1 {
+            font-size: 48px; /* Heading size */
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 18px; /* Paragraph size */
+            margin: 10px 0 20px;
+        }
+
+        .banner button {
+            padding: 10px 20px; /* Button padding */
+            font-size: 16px; /* Button text size */
+            border: none;
+            border-radius: 5px; /* Rounded button corners */
+            background-color: #3490dc; /* Button background color */
+            color: white;
+            cursor: pointer;
+        }
+
+        .banner button:hover {
+            background-color: #2779bd; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Banner Section -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>Welcome to Our Website!</h1>
+        <p>Explore our wide range of products and enjoy the best deals and discounts available.</p>
+        <button>Get Started new</button>
+    </div>
+</section>
+
+</body>
+</html>

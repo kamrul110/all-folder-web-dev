@@ -1,0 +1,59 @@
+
+/* maximum m2-7 er kaj kora hoeche */
+/* font,text,background */
+
+/* .header m2-8.html er sathe */
+.header{
+    height: 300px;
+
+    /* background-image: url("istockphoto-1299769825-1024x1024.jpg"); */
+     
+    
+    /* jodi cobi ta ek level uprer file e thake tokhon ../ eta use krbo */
+
+
+     background-image: url('../istockphoto-1358464519-1024x1024.jpg');
+    /* jodi kono karone reapit hoy tahole background reapit none korbo */
+    /* background-repeat: none; */
+    /* background-repeat: repeat-x; */
+    
+    /* background-repeat: repeat-y; */
+    /* background-size: auto; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 500px; */
+    /* height,width o set kra jabe */
+
+}
+
+h3{
+   font-size: 40px; 
+   text-decoration: overline;
+   font-family: 'Courier New', Courier, monospace;
+}
+.blog{
+    margin: 40px;
+    border: 10px solid tomato;
+    /* box shadow er 3number px er kaj hocche 20px choriye jabe.ar box shadow use korle margin dite hbe*/
+    box-shadow: 10px 10px 20px blueviolet;
+}
+/* display none korle hide hoe jay ar visivility hidden dile hide hbe but jayga ta roye jabe */
+.second{
+    /* display: none; */
+    visibility: hidden;
+
+}
+.impedit{
+    border: 2px solid purple;
+    /* display block use korle height kaj korbe noyto korbe na */
+    height: 200px;
+    display: block;
+    /* margin e padding kaj korbe na margin kaj korate hole display block othoba display inline-block use krte hbe */
+    margin: 20px;
+    /* padding: 20px; */
+    display: inline-block;
+}
+/* display inline korar fole ak line e hoe geche list gula */
+li{
+    display: inline;
+}

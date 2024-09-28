@@ -1,0 +1,44 @@
+/* m4-4,5 er jnno
+ */
+
+/* display,margin */
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    /* flex dile dan e row borabor */
+}
+
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+nav li :hover{
+    background-color: rgb(17, 72, 239);
+   
+    /* hover dile click kortechi mone hoy */
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(243, 99, 9);
+}
+
+
+ /* m4-6 er jnno o */
+nav li .dropdown{
+    display: none;
+    position:absolute;
+    background-color: rgb(11, 231, 224);
+    padding-left: 10px;
+    
+}
+
+/* nested menu styles m4-6.html er jnno */
+
+/* > ei chinho er mane holo imidiate age jeta seta dekhabe akhn table  click korle table er tuku dekhabe */
+nav li:hover > .dropdown{
+    display: block;
+    /* block mane dekha jabe */
+}

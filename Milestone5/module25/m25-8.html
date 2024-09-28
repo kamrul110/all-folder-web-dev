@@ -1,0 +1,91 @@
+<!-- abr dekhte hbe -->
+ <!-- delowar -->
+  <!--age id diye aktare dhore niye astam oi 1tar vitor addEvenListener martam aiber class diye sob gulare paichi kichu loop through kore prottek ta ke paichi-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <h1>Explore Event Delegate</h1>
+    <section>
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Facilis, repellendus ullam!</li>
+            <li class="item">Pariatur, quo beatae.</li>
+            <li class="item">Iure, accusamus explicabo!</li>
+            <li class="item">Reprehenderit, suscipit minus!</li>
+            <li class="item">Earum, dolores eius?</li>
+        </ul>
+        <button id="btn-add-item">Add Item</button>
+    </section>
+    <script>
+       //step 1
+    //   let items = document.getElementsByClassName('item');
+    //   for(let item of items){
+    //     item.addEventListener('click',function(){
+    //         console.log(item);
+    //     })
+    //   }
+      //orthoba eta 2ta same e    niche sudhu akta
+
+    //       let items = document.getElementsByClassName('item');
+    //   for(let item of items){
+    //     item.addEventListener('click',function(event){
+    //         console.log(event.target);
+    //     })
+    //   }
+
+
+//step 2
+    //   let items = document.getElementsByClassName('item');
+    //   for(let item of items){
+    //     item.addEventListener('click',function(event){
+    //         console.log(event.target.parentNode);
+    //         //target mane jetar upor click korchi suppose dhori li er upre click korechi.ar parent dile amra list-container ke pabo orthat ul ke mane er ager baba ke
+
+    //     })
+    //   }
+
+//step 3
+    //   let items = document.getElementsByClassName('item');
+    //     for(const item of items){
+    //     // items er moddhe prottek ta item ke pawa
+    //         item.addEventListener('click', function(event){
+    //             event.target.parentNode.removeChild(event.target);
+    //             //mane remove deyar por event.target orthat jetake click korechi seta e remove krbo
+    //         })
+    //     }
+
+
+
+
+
+
+
+//step 4   eikhane step 4 and 5 tai kaj korbe altimetly oigula bad
+        document.getElementById('list-container').addEventListener('click', function(event){
+            // console.log(event.target);
+            event.target.parentNode.
+            removeChild(event.target);
+            //target mane jetake click krchi ta ke pawa
+            
+        })
+
+//step 5
+        document.getElementById('btn-add-item').addEventListener('click', function(){
+            //step:1 kar moddhe add korbo
+            const listContainer = document.getElementById('list-container');
+            //step:2 add korbo..ejnno notun list item add krechi
+            const li = document.createElement('li');
+            li.innerText = 'Brand New Item added';
+            li.classList.add('item');
+            listContainer.appendChild(li);
+            // append child mane jog kra.orthat li ke appendChild koralam mane add korlam
+        })
+    </script>
+</body>
+</html>

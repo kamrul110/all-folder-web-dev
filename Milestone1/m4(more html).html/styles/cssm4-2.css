@@ -1,0 +1,29 @@
+/* margin,text */
+
+nav > ul > li{
+    display: inline; 
+    margin-right: 50px;
+
+   
+    
+
+    /*
+    margin right bolte dan dike space soho dibe */
+}
+nav ul{
+    list-style: none;
+}
+nav li > a{
+    text-decoration: none;
+    /* text-decoration: none; bolte jodi niche underline na chai 
+    a{} bolte anchor*/
+
+}
+footer{
+    margin-top: 30px;
+    /* margin top home blog about ar &copy er majhe space dibe */
+    text-align: center;
+}
+nav > li > a{
+    text-decoration: none;
+}
