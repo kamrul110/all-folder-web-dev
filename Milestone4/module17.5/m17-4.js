@@ -41,4 +41,4 @@ console.log(Array.isArray(nums))
 console.log(Array.isArray(food))
 console.log(Array.isArray(age))
 
-// ja array tasks
+// js array tasks

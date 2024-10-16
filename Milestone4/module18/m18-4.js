@@ -62,7 +62,7 @@ for(let number = 1;   number<=5;    number = number+1){
       //s:6(print 2)
     console.log(number);
 }
-//run 1 2 3 4 5 6 7
+//run 1 2 3 4 5 
 
 //odd                 check
 //      step:1(1)     s:2(1<=10)      s:4(1=1+2=3)

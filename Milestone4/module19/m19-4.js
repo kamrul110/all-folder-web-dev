@@ -52,10 +52,10 @@ for(let i = 0; i <sentence.length; i++){
 
 /*
 const sentence = 'I am learning Web Dev.'
-let reverse = ''
-for(const letter of sentence){
-    reverse = letter + reverse;
-}
+// let reverse = ''
+// for(const letter of sentence){
+//     reverse = letter + reverse;
+// }
 let rev = ''
 for(let i = 0; i <sentence.length; i++){
     const letter = sentence[i];
@@ -70,10 +70,10 @@ console.log(rev);
 
 //or
 const sentence = 'I am learning Web Dev.'
-let reverse = ''
-for(const letter of sentence){
-    reverse = letter + reverse;
-}
+// let reverse = ''
+// for(const letter of sentence){
+//     reverse = letter + reverse;
+// }
 let rev = ''
 for(let i = 0; i <sentence.length; i++){
     const letter = sentence[i];

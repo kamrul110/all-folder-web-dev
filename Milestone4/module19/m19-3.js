@@ -1,17 +1,22 @@
+
+//ai module theke split() very useful.ar string e cheak kre includes() diye
 //jodi ekhan theke nirdisto ongso nite chai.slice ar sub string,sub str egula ek e jinis lagle search google
 //0,1,2,3,4,5,6,7
 //(2<--start ,5<--end before) (2,5) orthat 2theke suru mane 2 nibo abong 5 er age porjonto mane 4 porjono total 2,3,4
 
 
 // const address = 'andorKilla';
-// const part = address.slice(2, 5);
+// const part = address.slice(2, 5);//5 er ag porjnoti
 // console.log(part);
 //ans dor
 
 
 // const sentence = 'I am a good and hardworking person.';
+// console.log(sentence);
+//ans I am a good and hardworking person.
+
 // console.log(sentence.split());
-// //ans'I am a good and hardworking person.'
+// //ans[ 'I am a good and hardworking person.' ]arry ar mto
 
 
 //jodi gap na dei qtation er vitor
@@ -39,8 +44,12 @@ console.log(sentence1.split('a'));
 //ans[ 'I ', 'm ', ' good ', 'nd h', 'rdworking person.' ]
 
 
-
-
+//normally string immutable howay change korte pari na tai split use kore array baniye then change korte parbo
+const sentence = 'I am a good and hardworking person.';
+console.log(sentence);
+let i = sentence.split(' ')
+i[2]='i'
+console.log(i);
 
 
 
@@ -69,9 +78,9 @@ console.log(realFriend.join('-'));
 
 
 //concat part
-const first = 'Abid';
-const last = 'Navid';
-// const fullName = first + last;
+const firstz = 'Abid';
+const lastz = 'Navid';
+// const fullName = firstz + lastz;
 // console.log(fullName);
 
 
@@ -80,8 +89,8 @@ const last = 'Navid';
 
 const first1 = 'Abid';
 const last1 = 'Navid';
-const fullName = first1 + ' ' + last1;
-console.log(fullName);
+const fullNamee = first1 + ' ' + last1;
+console.log(fullNamee);
 
 
 
@@ -89,11 +98,11 @@ console.log(fullName);
 
 
 
-const first = 'Abid';
-const last = 'Navid';
-const fullName = first + ' ' + last;
-const fullName2 = first.concat(last)
-console.log(fullName2);
+// const first = 'Abid';
+// const last = 'Navid';
+// const fullName = first + ' ' + last;
+// const fullName2 = first.concat(last)
+// console.log(fullName2);
 
 
 

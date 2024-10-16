@@ -1,3 +1,4 @@
+//left side gulake bole key right side gula ke value bole obj er
 // for of : array
 // for in : object
 

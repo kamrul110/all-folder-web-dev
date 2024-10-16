@@ -35,6 +35,8 @@ console.log(peyaraPrice > applePrice);
 
 // console.log(10 === '10')
 // compare kore === eta
+// true
+// false
 
 // console.log(120 === 'tomato')
 

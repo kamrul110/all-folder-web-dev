@@ -97,16 +97,18 @@ As Ersa is learning now, she wants to explore more and more. Tell Ersa to genera
 */
 
 
-/*
-let num = 5;
-let multi=0;
-let nw = 'X';
-let x = '='
-while(multi <= 10 ){
-    console.log(num ,nw,multi,x,num*multi);
-    multi++;
+let number=5;
+let num = 1
+while(num<=10){
+    console.log(number,'x',num,'=',number*num);
+    num++
 }
-*/
+//or jodi for diye kori
+number =5;
+for (let num=0; num<=10;num++){
+  console.log(number,'x',num,'=',number*num);
+    
+}
 
 
 

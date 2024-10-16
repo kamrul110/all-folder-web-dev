@@ -27,7 +27,7 @@ console.log('--------------')
 square(12);
 square(5);
 square(405);
-// 402 is argument
+// 405 is argument
 
 
 

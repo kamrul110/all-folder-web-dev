@@ -1,4 +1,4 @@
-
+//ei module e important holo trim() use 
 const school = 'RAJ UK Uttara Model School';
 
 console.log(school);

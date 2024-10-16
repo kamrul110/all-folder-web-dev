@@ -1,0 +1,9 @@
+{
+    "git.enabled": true,
+    "editor.codeActionsOnSave": {
+
+    },
+    "notebook.codeActionsOnSave": {
+        
+    }
+}

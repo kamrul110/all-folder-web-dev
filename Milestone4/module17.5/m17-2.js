@@ -8,6 +8,13 @@ const numbers = [88, 77, 99, 421, 54, 63];
 console.log(numbers);
 // get element value by index  ans index 3 holo 421
 console.log(numbers[3])
+//
+for(let num of numbers){
+    console.log(num);
+   
+}
+
+
 
 
 // varible e rekhe o array index check krte parbo
